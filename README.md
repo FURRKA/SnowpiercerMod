@@ -5,4 +5,5 @@ This mod adds 2 trains, a reinforced freight car and a power cell to power the t
 
 Yes, the mod is simple, but it was a good experience to create mods for this wonderful game. :) 
 
-In the archive, you can take the world with laid railroads on a map that repeats our real planet. I hope you will like it :)
+Snowpiercer world map: https://drive.google.com/file/d/1LNUvJmmUqFvapCG9Z9rJqIjtQ2oLWIPs/view?usp=sharing
+I hope you will like it :)
