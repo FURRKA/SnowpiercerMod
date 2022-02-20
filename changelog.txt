@@ -1,3 +1,10 @@
+ver. 1.1.0
+Date: 20/02/22
+ Add engine sounds
+ Add stop effect
+ Fix - Defining additional mods and modloader
+Thank you so much for 100 downloads!
+
 ver. 1.0.1
 Date: 05/02/22
  Fix - no mod recognition

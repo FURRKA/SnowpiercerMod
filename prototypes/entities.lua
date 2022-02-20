@@ -15,8 +15,50 @@ Snowpiercer.color = {0.5, 0.5, 0.5, 1}
 Snowpiercer.LightDefinition = {intensity = 1, size = 30, color = {r = 1, g =0.5}}
 Snowpiercer.alert_when_damaged= true
 Snowpiercer.flag = {"rotatable"}
-Snowpiercer.stop_trigger = 
+Snowpiercer.working_sound =
 {
+  sound =
+  {
+    filename = "__Snowpiercer__/sound/working-sound.ogg",
+    volume = 1.0
+  },
+
+  activate_sound =
+  {
+    filename = "__Snowpiercer__/sound/engine-start.ogg",
+    volume = 1.0
+  },
+  deactivate_sound = {
+    filename = "__Snowpiercer__/sound/stop_engeen.ogg",
+    volume = 2.0
+  }
+}
+Snowpiercer.stop_trigger =
+{
+  -- left side
+  {
+    type = "create-trivial-smoke",
+    repeat_count = 125,
+    smoke_name = "smoke-train-stop",
+    initial_height = 0,
+    -- smoke goes to the left
+    speed = {-0.03, 0},
+    speed_multiplier = 0.75,
+    speed_multiplier_deviation = 1.1,
+    offset_deviation = {{-0.75, -2.7}, {-0.3, 2.7}}
+  },
+  -- right side
+  {
+    type = "create-trivial-smoke",
+    repeat_count = 125,
+    smoke_name = "smoke-train-stop",
+    initial_height = 0,
+    -- smoke goes to the right
+    speed = {0.03, 0},
+    speed_multiplier = 0.75,
+    speed_multiplier_deviation = 1.1,
+    offset_deviation = {{0.3, -2.7}, {0.75, 2.7}}
+  },
   {
     type = "play-sound",
     sound =
@@ -25,7 +67,17 @@ Snowpiercer.stop_trigger =
         filename = "__base__/sound/train-breaks.ogg",
         volume = 0.3
       }
-    }
+    } 
+  },
+  {
+    type = "play-sound",
+    sound =
+    {
+      {
+        filename = "__base__/sound/train-brake-screech.ogg",
+        volume = 0.3
+      }
+    } 
   }
 }
 
@@ -44,8 +96,50 @@ BigElice.color = {0.5, 0.5, 0.5, 1}
 BigElice.LightDefinition = {intensity = 1, size = 30, color = {r = 1, g =0.5}}
 BigElice.alert_when_damaged = true
 BigElice.flag = {"rotatable"}
-BigElice.stop_trigger = 
+BigElice.working_sound =
 {
+  sound =
+  {
+    filename = "__Snowpiercer__/sound/working-sound.ogg",
+    volume = 1.0
+  },
+
+  activate_sound =
+  {
+    filename = "__Snowpiercer__/sound/engine-start.ogg",
+    volume = 1.0
+  },
+  deactivate_sound = {
+    filename = "__Snowpiercer__/sound/stop_engeen.ogg",
+    volume = 2.0
+  }
+}
+BigElice.stop_trigger =
+{
+  -- left side
+  {
+    type = "create-trivial-smoke",
+    repeat_count = 125,
+    smoke_name = "smoke-train-stop",
+    initial_height = 0,
+    -- smoke goes to the left
+    speed = {-0.03, 0},
+    speed_multiplier = 0.75,
+    speed_multiplier_deviation = 1.1,
+    offset_deviation = {{-0.75, -2.7}, {-0.3, 2.7}}
+  },
+  -- right side
+  {
+    type = "create-trivial-smoke",
+    repeat_count = 125,
+    smoke_name = "smoke-train-stop",
+    initial_height = 0,
+    -- smoke goes to the right
+    speed = {0.03, 0},
+    speed_multiplier = 0.75,
+    speed_multiplier_deviation = 1.1,
+    offset_deviation = {{0.3, -2.7}, {0.75, 2.7}}
+  },
   {
     type = "play-sound",
     sound =
@@ -54,9 +148,10 @@ BigElice.stop_trigger =
         filename = "__base__/sound/train-breaks.ogg",
         volume = 0.3
       }
-    }
+    } 
   }
 }
+
 --Прототип грузовых вагонов
 local SCargowagon = table.deepcopy(data.raw["cargo-wagon"]["cargo-wagon"])
 SCargowagon.name = "Snowcar"
@@ -86,8 +181,32 @@ SCargowagon.resistances =
     percent = 50
   }
 }
-SCargowagon.stop_trigger = 
+SCargowagon.stop_trigger =
 {
+  -- left side
+  {
+    type = "create-trivial-smoke",
+    repeat_count = 125,
+    smoke_name = "smoke-train-stop",
+    initial_height = 0,
+    -- smoke goes to the left
+    speed = {-0.03, 0},
+    speed_multiplier = 0.75,
+    speed_multiplier_deviation = 1.1,
+    offset_deviation = {{-0.75, -2.7}, {-0.3, 2.7}}
+  },
+  -- right side
+  {
+    type = "create-trivial-smoke",
+    repeat_count = 125,
+    smoke_name = "smoke-train-stop",
+    initial_height = 0,
+    -- smoke goes to the right
+    speed = {0.03, 0},
+    speed_multiplier = 0.75,
+    speed_multiplier_deviation = 1.1,
+    offset_deviation = {{0.3, -2.7}, {0.75, 2.7}}
+  },
   {
     type = "play-sound",
     sound =
@@ -96,11 +215,9 @@ SCargowagon.stop_trigger =
         filename = "__base__/sound/train-breaks.ogg",
         volume = 0.3
       }
-    }
+    } 
   }
 }
-
-
 
 data:extend(
     {Snowpiercer, BigElice, SCargowagon}

@@ -1,9 +1,9 @@
 {
-    "name":"Snowpierсer",
-    "version":"1.0.0",
+    "name":"Snowpiercer",
+    "version":"1.1.0",
     "author":"FURRKA",
-    "dependencies": ["base","?Big Winter","?Factorio World"],
-    "title":"Snowpierсer",
+    "dependencies": ["base","?BigWinter"],
+    "title":"Snowpiercer",
     "description":"Add Snowpiercer and Big Alice in game",
     "factorio_version": "1.1",
     "homepage":"https://github.com/FURRKA/SnowpiercerMod"
