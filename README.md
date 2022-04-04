@@ -5,5 +5,5 @@ This mod adds 2 trains, a reinforced freight car and a power cell to power the t
 
 Yes, the mod is simple, but it was a good experience to create mods for this wonderful game. :) 
 
-Snowpiercer world map: https://drive.google.com/file/d/1LNUvJmmUqFvapCG9Z9rJqIjtQ2oLWIPs/view?usp=sharing
+Snowpiercer world map: https://drive.google.com/file/d/13rh9lSJpdf8KnBa_DQx87H6Klry0xKh2/view?usp=sharing
 I hope you will like it :)
